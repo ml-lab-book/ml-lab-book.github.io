@@ -57,9 +57,19 @@ Table of Contents:
 <table class="wide">
 <tr>
   <td>
+    <a href="pages/01_Python.html">
+        Lab0-Python	
+    </a>
+    <a href="pages/03_NumPy.html">
+        Lab0-NumPy	
+    </a>
+   <a href="pages/03_Pandas.html">
+        Lab0-Pandas	
+    </a>
     <a href="pages/Lab1.html">
         Lab1
     </a>
+    
   </td>
 </tr>
 </table>
