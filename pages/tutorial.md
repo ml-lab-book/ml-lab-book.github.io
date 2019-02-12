@@ -1,7 +1,7 @@
 ---
 layout: page
-title: software
-description: Karl Broman's software
+title: Tutorial
+description: Tutorial Notes for BITS F464
 ---
 <!--
 <div class="navbar">
