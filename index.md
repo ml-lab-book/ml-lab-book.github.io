@@ -13,6 +13,9 @@ description: Developed at BITS Pilani, KK Birla Goa Campus
       </ul>
   </div>
 </div>
+
+<img src="assets/pics/nofreelunch.png" title="No Free Lunch Theorem"/>
+
 <!--
 <table class="wide">
 <tr>
