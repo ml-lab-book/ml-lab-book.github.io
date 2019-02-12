@@ -4,18 +4,16 @@ title: ML Lab Book
 description: Developed at BITS Pilani, KK Birla Goa Campus
 
 ---
-<!--
+
 <div class="navbar">
   <div class="navbar-inner">
       <ul class="nav">
-          <li><a href="{{ BASE_PATH }}/assets/broman_cv.pdf">cv</a></li>
-          <li><a href="https://github.com/kbroman">github</a></li>
-          <li><a href="https://kbroman.org/blog">blog</a></li>
-          <li><a href="https://twitter.com/kwbroman">@kwbroman</a></li>
+          <li><a href="{{ BASE_PATH }}/tutorial/">Tutorial</a></li>
+          <li><a href="{{ BASE_PATH }}/lab/">Lab</a></li>
       </ul>
   </div>
 </div>
--
+<!--
 <table class="wide">
 <tr>
   <td class="left">
@@ -52,6 +50,10 @@ description: Developed at BITS Pilani, KK Birla Goa Campus
   </div>
 </div>
 -->
+<!---
+your comment goes here
+and here
+
 Table of Contents:
 
 <table class="wide">
@@ -73,3 +75,4 @@ Table of Contents:
   </td>
 </tr>
 </table>
+-->
