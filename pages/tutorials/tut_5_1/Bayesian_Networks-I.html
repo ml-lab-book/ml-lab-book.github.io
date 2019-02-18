@@ -11778,54 +11778,51 @@ div#notebook {
 <h1 id="Probabilistic-Graphical-Models">Probabilistic Graphical Models<a class="anchor-link" href="#Probabilistic-Graphical-Models">&#182;</a></h1><h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><ul>
 <li><a href="https://www.coursera.org/learn/probabilistic-graphical-models"> Daphne Koller: Probabilistic Graphical Models: Representation </a></li>
 </ul>
-<ul>
-<li><p>Two types of Probabily Models:</p>
-<ul>
-<li><p>Generative: Model the joint distribution of all the random variables (X) i.e P(X).</p>
-</li>
-<li><p>Discriminative: Model the conditional probability of some of the variables (say Y), given other ones (say X) i.e P(Y|X)</p>
-</li>
-</ul>
-</li>
+<h3 id="Generative-Models-v/s-Discriminative-models:">Generative Models v/s Discriminative models:<a class="anchor-link" href="#Generative-Models-v/s-Discriminative-models:">&#182;</a></h3><ul>
+<li>Generative: Model the joint distribution of all the random variables (X) i.e P(X).</li>
 </ul>
 <ul>
-<li><strong>Q1</strong>. Suppose $ | Y | = n $ and $ | X | = m $. Assume all the random variables are binary. How many parameters would you have to learn if you want to build a:<ul>
+<li>Discriminative: Model the conditional probability of some of the variables (say Y), given other ones (say X) i.e P(Y|X)</li>
+</ul>
+<ul>
+<li><strong>Q</strong>. Suppose $ | Y | = n $ and $ | X | = m $. Assume all the random variables are binary. How many parameters would you have to learn if you want to build a:<ul>
 <li>Discriminative model?</li>
 <li>Generative model?</li>
 </ul>
 </li>
 </ul>
-<h3 id="Generative-Models-v/s-Discriminative-ones:">Generative Models v/s Discriminative ones:<a class="anchor-link" href="#Generative-Models-v/s-Discriminative-ones:">&#182;</a></h3><ul>
-<li><p>You can obtain a discriminative model from a generative one.</p>
-</li>
-<li><p>Discriminative models involve lesser complexity than the Generative ones.</p>
-</li>
+<ul>
+<li>You can obtain a discriminative model from a generative one. </li>
+</ul>
+<ul>
+<li>Discriminative models involve lesser complexity than the Generative ones.</li>
 </ul>
 <h3 id="Why-Probabilistic-Models?">Why Probabilistic Models?<a class="anchor-link" href="#Why-Probabilistic-Models?">&#182;</a></h3><ul>
-<li><p>Probabilistic models capture the uncertainty in the result as well.</p>
-</li>
-<li><p>Some people believe that there's an inherent stochasticity in nature. So, everything is probabilistic.</p>
-</li>
-<li><p>Probability theory has been well studied. Can utilize the Statistical learning toolbox.</p>
-</li>
+<li>Probabilistic models capture the uncertainty in the result as well.</li>
+</ul>
+<ul>
+<li>Some people believe that there's an inherent stochasticity in nature. So, everything is probabilistic. </li>
+</ul>
+<ul>
+<li>Probability theory has been well studied. Can utilize the Statistical learning toolbox.</li>
 </ul>
 <h3 id="Why-Graph-Representation?">Why Graph Representation?<a class="anchor-link" href="#Why-Graph-Representation?">&#182;</a></h3><ul>
-<li><p>Sparse Parametrization</p>
-</li>
-<li><p>Efficient Algorithms to reason from the data.</p>
-</li>
+<li>Sparse Parametrization</li>
+</ul>
+<ul>
+<li>Efficient Algorithms to reason from the data.</li>
 </ul>
 <h3 id="Two-types-of-models:">Two types of models:<a class="anchor-link" href="#Two-types-of-models:">&#182;</a></h3><ul>
-<li><p>Bayesian Networks: Directed Models</p>
-</li>
-<li><p>Markov Networks: Undirected Models</p>
-</li>
+<li>Bayesian Networks: Directed Models</li>
+</ul>
+<ul>
+<li>Markov Networks: Undirected Models</li>
 </ul>
 <h3 id="Where-have-these-been-used?">Where have these been used?<a class="anchor-link" href="#Where-have-these-been-used?">&#182;</a></h3><ul>
-<li><p>Bayesian Networks: Medical Diagonsis</p>
-</li>
-<li><p>Markov Networks: Image Segmentation</p>
-</li>
+<li>Bayesian Networks: Medical Diagonsis</li>
+</ul>
+<ul>
+<li>Markov Networks: Image Segmentation</li>
 </ul>
 
 </div>
@@ -11835,8 +11832,23 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-of-a-Bayesian-Network">Example of a Bayesian Network<a class="anchor-link" href="#Example-of-a-Bayesian-Network">&#182;</a></h2><p><img src="./files/bayesian_net.png" width=80%> </img></p>
-<p><strong>Q2.</strong> Calculate  $P(d^0, i^1, g^3, s^1, l^1) $</p>
+<h2 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h2><p><strong>Q1</strong></p>
+<p><img src="./files/Q1.png" width=70%> </img></p>
+<hr>
+<p><strong>Q2.</strong></p>
+<p><img src="./files/bayesian_net.png" width=80%> </img></p>
+<ul>
+<li><p>Calculate:</p>
+<p>$ P(d^0, i^1, g^3, s^1, l^1) $</p>
+<p>$ P(d^0, i^1,l^1) $</p>
+<p>$ P(G | i^0, d^0) $</p>
+<p>$ P(G | i^0) $</p>
+</li>
+</ul>
+<hr>
+<p><img src="./files/Q2.png" width=50%> </img></p>
+<p><strong>Q3</strong> Calculate P(Accident = 1|President = 1) and P(Accident = 1| Traffic=1, President = 1)</p>
+<hr>
 
 </div>
 </div>
@@ -11849,12 +11861,13 @@ div#notebook {
 <li>Chapter 6 - Paramaeter learning: Binary Variables from <a href="https://www.amazon.com/Learning-Bayesian-Networks-Richard-Neapolitan/dp/0130125342"> Learning Bayesian Networks</a>.</li>
 </ul>
 <h3 id="Structure-learning-v/s-parameter-learning">Structure learning v/s parameter learning<a class="anchor-link" href="#Structure-learning-v/s-parameter-learning">&#182;</a></h3><ul>
-<li><p>Two types of learning: Structure and Parameter learning. Both of them can be learnt from data.</p>
-</li>
-<li><p>Linear Regression. The use of regularization as a means to achieve structure learning and parameter learning simultaneously.</p>
-</li>
-<li><p>Here we'll use that we have structure given to us. All we need to do is learn the Parameters.</p>
-</li>
+<li>Two types of learning: Structure and Parameter learning. Both of them can be learnt from data. </li>
+</ul>
+<ul>
+<li>Linear Regression. The use of regularization as a means to achieve structure learning and parameter learning simultaneously.</li>
+</ul>
+<ul>
+<li>Here we'll use that we have structure given to us. All we need to do is learn the Parameters.</li>
 </ul>
 <h3 id="Beta-distribution">Beta distribution<a class="anchor-link" href="#Beta-distribution">&#182;</a></h3><ul>
 <li>$$ \Gamma(x+1)=\int_{0}^{\infty}t^{x}e^{-t} $$ </li>
@@ -11970,14 +11983,16 @@ $$ ρ(f|d) = \frac{f^s (1 − f )^t ρ(f)}{E(F^s[1 − F ]^t)} $$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Next-class">Next class<a class="anchor-link" href="#Next-class">&#182;</a></h3><ul>
-<li><p>Marginalization (Some Problems)</p>
-</li>
-<li><p>Connections and building blocks of Bayesian Networks</p>
-</li>
-<li><p>Conditional Independences: d - Separation</p>
-</li>
-<li><p>Multinomial distribution</p>
-</li>
+<li>Marginalization (Some Problems)</li>
+</ul>
+<ul>
+<li>Connections and building blocks of Bayesian Networks</li>
+</ul>
+<ul>
+<li>Conditional Independences: d - Separation</li>
+</ul>
+<ul>
+<li>Multinomial distribution</li>
 </ul>
 
 </div>
